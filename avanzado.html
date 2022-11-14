@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Busqueda Avanzada</title>    
+    <link rel="icon" href="https://www.unsa.edu.pe/wp-content/uploads/2017/12/cropped-LogoUNSAFav-192x192.png" sizes="192x192">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./principal.html">Buscador de Google</a></li>
+            <li><a href="./imagenes.html">Imágenes de Google</a></li>
+            <li><a href="#">Buscador avanzado</a></li>
+        </ul>
+        <img src="https://ouis.unsa.edu.pe/tramited/build/assets/unsa.c59ddcb1.png" align = "right" alt="img unsa" width="140px"  >
+    </nav>
+    <div class = "container-advancedSearch"><!--Buscador Avanzado-->
+        <h1>BUSQUEDA AVANZADA</h1>
+        <hr/>
+        <h3 style="margin-top: 20px">Mostrar páginas con las siguientes palabras </h3>
+        <form action="./cgi-bin/avanzado.pl" method="GET">
+            <div class = "container-label"><label>Todas estas palabras: </label></div>
+            <input type="text" name = "differentWords" autocomplete="off"><br/>
+            <div class = "container-label"><label>Esta palabra o frase exacta: </label></div>
+            <input type="text" name = "wordsExactly" autocomplete="off"><br/>
+            <div class = "container-label"><label>Ninguna de estas palabras: </label></div>
+            <input type="text" name = "anyWord" autocomplete="off"><br/>
+            <div class = "container-label"></div>
+            
+            <input type= "submit" class = "advanced-submit" value = "Búsqueda Avanzada">
+        </form>
+    </div>
+    
+</body>
+</html>
